@@ -11,6 +11,14 @@ const Table = ({books}) => {
                 <TableField fieldName= "ISBN#"/>
                 <TableField fieldName= "Settings"/>
             </div>
+            {books.map((books)=>{
+                <div key = {books.bookId} className="tableRow">
+                    <TableField fieldName={books.bookTitle}/>
+                    <TableField fieldName={books.bookAuthor} />
+                    <TableField fieldName={books.bookIsbn}/>
+                    <TableField settingsField/>
+                    </div>
+            })}
         </div>
         </>
     )
