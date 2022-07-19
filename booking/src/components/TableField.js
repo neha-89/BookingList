@@ -1,5 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const TableField = ({fieldName ,settingsField}) =>{
     return(
@@ -8,9 +8,9 @@ const TableField = ({fieldName ,settingsField}) =>{
             {fieldName}
             {settingsField && 
             <>
-            <FontAwesomeIcon icon="fa-solid fa-pen-to-square" />
+            {/* <FontAwesomeIcon icon="fa-solid fa-pen-to-square" /> */}
             <i className="fa-solid fa-pen-to-square"></i>
-            <i class="fa-solid fa-trash-can"></i>
+            <i className="fa-solid fa-trash-can"></i>
             </>
             }
          </div>
